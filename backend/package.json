@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/main.ts",
+    "start": "node dist/main.js",
+    "build": "npx tsc -p ."
   },
   "keywords": [],
   "author": "",
@@ -13,6 +15,16 @@
   "dependencies": {
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
+    "express-session": "^1.18.2",
+    "localtunnel": "^2.0.2",
     "twilio": "^5.10.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/express-session": "^1.18.2",
+    "@types/node": "^24.7.2",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
   }
 }
